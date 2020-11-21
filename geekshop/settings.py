@@ -199,14 +199,6 @@ SOCIAL_AUTH_URL_NAMESPACE = "social"
 # SOCIAL_AUTH_VK_OAUTH2_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 # SOCIAL_AUTH_VK_OAUTH2_SECRET = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
-# Load settings from file for Vk
-with open(".secrets/vk.json", "r") as f:
-    VK = json.load(f)
-
-SOCIAL_AUTH_VK_OAUTH2_KEY = VK["SOCIAL_AUTH_VK_OAUTH2_APPID"]
-SOCIAL_AUTH_VK_OAUTH2_SECRET = VK["SOCIAL_AUTH_VK_OAUTH2_KEY"]
-
-
 
 LOGIN_ERROR_URL = "/"
 
